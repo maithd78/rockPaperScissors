@@ -19,7 +19,7 @@ const playGame = () => {
             } else if (promptHuman.toLowerCase() === "paper") {
                 console.log("You played Paper");
                 return "Paper";
-            } else if (promptHuman.toLowerCase() === "scissors","scissor",) {
+            } else if (promptHuman.toLowerCase() === "scissors","scissor") {
                 console.log("You played Scissors");
                 return "Scissors";
             }
