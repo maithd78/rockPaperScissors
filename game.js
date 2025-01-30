@@ -19,7 +19,7 @@ const playGame = () => {
             } else if (promptHuman.toLowerCase() === "paper") {
                 console.log("You played Paper");
                 return "Paper";
-            } else if (promptHuman.toLowerCase() === "scissors","scissor") {
+            } else if (promptHuman.toLowerCase() === "scissors","scissor",) {
                 console.log("You played Scissors");
                 return "Scissors";
             }
@@ -81,9 +81,11 @@ console.log("Human Wins "+HumanScore);
 
 if (HumanScore === ComputerScore) {
     console.log("GAME TIE");
+    alert("TIE")
 } else if (HumanScore < ComputerScore) {
         console.log("YOU LOST");
+        alert("YOU LOSE")
 } else {
     console.log("YOU WIN");
+    alert("YOU WIN")
 }
-
