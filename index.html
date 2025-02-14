@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script src="gameUI.js" defer></script>
+    <style src="styles.css"></style>
 </head>
-<body style="background-color: black; color: white;">
-    <script src="game.js"></script>
-    <h1>Rock Paper Scissors</h1>
-    
+
+<body>
+    <div class="top">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+    </div>
+
+    <div class="rules">
+        <h2>First to 5 points wins</h2>
+    </div>
+
+    <div class="score">
+        <h3>Player</h3>
+        <!-- add +1 via js -->
+        <p id="playerTally">0</p>
+        <h3>Computer</h3>
+        <!-- add +1 via js -->
+        <p id="computerTally">0</p>
+    </div>
+
+    <div class="round">
+        <h3>Round</h3>
+        <!-- adds +1 to roundTally after each round via js -->
+        <p id="roundTally">0</p>
+    </div> 
+    <div class="game">
+        <div class="equipment">
+            <button id="Rock">Rock</button>
+            <button id="Paper">Paper</button>
+            <button id="Scissors">Scissors</button>
+        </div>
+        <!-- shows computer choice via js -->
+        <div class="showComputer"></div>
+        <!-- Shows result of choices via js -->
+        <div class="roundEnd"></div>
+    </div>
 </body>
 </html>

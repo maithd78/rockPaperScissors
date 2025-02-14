@@ -1,30 +1,30 @@
-console.log("Hello World")
+console.log("Rock Paper Scissors")
 let ComputerScore = 0;
 let HumanScore = 0;
 const playGame = () => {
-    for (let i = 0; i < 5; i++) {
-        console.log("Round "+ (i+1));
+    // for (let i = 0; i < 5; i++) {
+    //     console.log("Round "+ (i+1));
         
         console.log("Computer Wins "+ComputerScore);
         console.log("Human Wins "+HumanScore);
         
-        const humanSelection = getHumanChoice();
+        // const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
 
-        function getHumanChoice() {
-            var promptHuman = prompt("Rock,Paper,Scissors");
-            if (promptHuman.toLowerCase() === "rock") {
-                console.log("You played Rock");
-                return "Rock";
-            } else if (promptHuman.toLowerCase() === "paper") {
-                console.log("You played Paper");
-                return "Paper";
-            } else if (promptHuman.toLowerCase() === "scissors","scissor") {
-                console.log("You played Scissors");
-                return "Scissors";
-            }
+        // function getHumanChoice() {
+        //     var promptHuman = prompt("Rock,Paper,Scissors");
+        //     if (promptHuman.toLowerCase() === "rock") {
+        //         console.log("You played Rock");
+        //         return "Rock";
+        //     } else if (promptHuman.toLowerCase() === "paper") {
+        //         console.log("You played Paper");
+        //         return "Paper";
+        //     } else if (promptHuman.toLowerCase() === "scissors","scissor") {
+        //         console.log("You played Scissors");
+        //         return "Scissors";
+        //     }
                 
-        }
+        // }
         function getComputerChoice() {
             var CompChoice = Math.floor(Math.random() * 3);
                 // console.log(CompChoice);
@@ -67,25 +67,32 @@ const playGame = () => {
         }
         
     }
-    // console.log("Computer Wins "+ComputerScore);
-    // console.log("Human Wins "+HumanScore)
- 
 
     playRound(humanSelection, computerSelection);
     }
-}
-playGame();
+// }
 
-console.log("Computer Wins "+ComputerScore);
-console.log("Human Wins "+HumanScore);
+// playGame();
 
-if (HumanScore === ComputerScore) {
-    console.log("GAME TIE");
-    alert("TIE")
-} else if (HumanScore < ComputerScore) {
-        console.log("YOU LOST");
-        alert("YOU LOSE")
-} else {
-    console.log("YOU WIN");
-    alert("YOU WIN")
-}
+// console.log("Computer Wins "+ComputerScore);
+// console.log("Human Wins "+HumanScore);
+
+// if (HumanScore === ComputerScore) {
+//     console.log("GAME TIE");
+//     alert("TIE")
+// } else if (HumanScore < ComputerScore) {
+//         console.log("YOU LOST");
+//         alert("YOU LOSE")
+// } else {
+//     console.log("YOU WIN");
+//     alert("YOU WIN")
+// }
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        humanSelection = button.id;
+        playGame();
+    })
+})
