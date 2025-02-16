@@ -67,7 +67,6 @@ const playGame = () => {
         }
         
     }
-
     playRound(humanSelection, computerSelection);
     }
 // }
