@@ -1,11 +1,23 @@
 // queryselectors
-const buttons           = document.querySelectorAll("button");
-const computerPlay      = document.querySelector("showComputer");
-const roundEndResults   = document.querySelector("roundEnd");
+
+
+// computer choice logic
+
+
+function playRound() {
+}
+
+function getComputerChoice() {
+    let n = Math.floor(Math.random() * 3);
+    let computerChoice = selection[n];
+    return computerChoice
+}
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        let playerChoice = button.id;
-        console.log(playerChoice);
+        playerChoice = button.id;
+        playRound();
     })
 })
+
+javascript
