@@ -31,18 +31,25 @@
     <div class="round">
         <h3>Round</h3>
         <!-- adds +1 to roundTally after each round via js -->
-        <p id="roundTally">0</p>
+        <p id="roundTally">1</p>
     </div> 
     <div class="game">
         <div class="equipment">
-            <button id="Rock">Rock</button>
-            <button id="Paper">Paper</button>
-            <button id="Scissors">Scissors</button>
+            <button class="weapon" id="Rock">Rock</button>
+            <button class="weapon" id="Paper">Paper</button>
+            <button class="weapon" id="Scissors">Scissors</button>
         </div>
         <!-- shows computer choice via js -->
-        <div class="showComputer"></div>
-        <!-- Shows result of choices via js -->
-        <div class="roundEnd"></div>
+        <div class="roundEndCard">
+            <div class="showComputer"></div>
+            <!-- Shows result of choices via js -->
+            <div class="roundEnd"></div>
+        </div>
+        <div>
+        <button id="restart">Restart</button>
+            <!-- <button id="log">Log</button> -->
+        </div>
+
     </div>
 </body>
 </html>
